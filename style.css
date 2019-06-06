@@ -4,53 +4,82 @@
 *,*:before, *:after {
     box-sizing: inherit;
 } */
+.parent {
+  width: 97%;
+  /* border: 5px solid gray; */
+  margin: 0 auto;
+  background-color: lavender;
+}
+
+.child {
+  width: 90%;
+  padding: 5%;
+  border: 4px solid white;
+  margin: .5em auto;
+  background-color: seashell;
+}
 body {
     margin: 0 auto;
 } 
-/* .parent {
-    width: 100%;
-border: solid 1px brown;
-
+li {
+  list-style: none;
 }
-.child {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 35%;
-    border: solid 1px brown;
-    padding: 10%;
-    margin: 0% 0% 2% 2%;
-} */
+h3 {
+  color: gray;
+  text-align: center;
+}
+p {
+  background-color: white;
+  padding: 40px;
+}
 nav {
     display: flex;
-    flex-wrap: wrap;
-    
+    align-items: flex-start;
+
+  justify-content: space-around;
+  
 }
+.box {
+  height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+    "top center bottom"
+    /* ".  . center . ."
+    ". . . bottom " */
+}
+a {
+  color: gray;
+  padding: 1em;
+  font-variant-caps: all-small-caps
+}
+
 footer {
-    border: solid 1px brown;
+margin-top: 45px;
+align-items: center;
+height: 70px;
+   text-align: center;
+
+}
+footer > span {
+  color: palevioletred
 }
 img {
-    width: 280px;
-    height: 300px;
+  background-color: rgb(237, 235, 235);
+   /* size: contain;  */
+    /* padding: 5em; */
+    border: solid white 2px;
 }
-header {height: 300px;
+/* header { 
     background-image: url();
-    border: solid 1px brown;
-    text-align: center
-}
+    text-align: center;
+    color: gray;
+} */
 main {
    display: flex;
-   flex-direction: column;
-    /* justify-items: center; 
-   align-content: center; */
-text-align: center;
+    flex-direction: column;   
 }
-.card {
-    padding: 1em;
-    align-content: space-around;
-    margin: 0% 0% 2% 2%;
-    background-color: rgb(74, 199, 74)
-}
+
 button {
 
     background-color: white;
@@ -59,3 +88,69 @@ button > img {
 width: 20px;
 height: 20px;
 }
+ 
+  /*   
+ @media (max-width: 550px ){
+    nav {
+        flex-direction: column
+    }
+}
+
+@media (max-width: 850px ){
+    nav {
+        flex-direction: column
+    }
+    .parent {
+        width: 65%
+    }
+}
+@media (min-width: 1200px ){
+    
+} 
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+   
+  }
+ .card {
+    flex-basis: 8em;
+    height: 12em;
+    border: 1px solid orange;
+    background: #FBFBFB;
+    box-shadow: 2px 2px 4px grey;
+    display: grid;
+   border-radius: 10%; 
+    grid-template-columns: .5em 1.5em 4em 1.5em .5em;
+    grid-template-rows: 3em 5em 3em;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    grid-template-areas:
+      "top . . . ."
+      ".  center . . ."
+      ". . bottom .  ."
+  }
+  .top {
+    grid-area: top;
+  }
+  
+  .center {
+    grid-area: center;
+  }
+  
+  .bottom  {
+    grid-area: bottom;
+  }
+  .card-back  {
+   adapted from: https://leaverou.github.io/css3patterns/#zig-zag 
+  background:
+    linear-gradient(135deg, #FBFBFB 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #FBFBFB 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #FBFBFB 25%, transparent 25%),
+    linear-gradient(45deg, #FBFBFB 25%, transparent 25%);
+  
+    background-color: mediumseagreen; 
+    background-image: url('img/download (1).png');
+   
+  }*/
