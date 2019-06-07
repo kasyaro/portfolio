@@ -107,8 +107,21 @@ display: flex;
   padding: .2em;
   background-color: seashell
 }
-  
- 
+ .design{
+  background-color: white;
+  margin: 1em;
+ }
+/* design */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-around;
+  margin: 1em;
+}
+
+ /* media */
  @media (max-width: 550px ){
    p {
  
@@ -131,11 +144,7 @@ display: flex;
     
 } 
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin: 1em;
-   
+
   }
  .card {
     flex-basis: 8em;
