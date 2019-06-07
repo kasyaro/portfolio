@@ -45,14 +45,8 @@ nav {
   justify-content: space-around;
   
 }
-.box {
- 
+.box { 
     background-color: ghostwhite;
-    display: grid;
-    grid-template-areas:
-    "top . center . bottom"
-    /* ".  . center . ."
-    ". . . bottom " */
 }
 a {
   color: gray;
