@@ -4,8 +4,29 @@
 *,*:before, *:after {
     box-sizing: inherit;
 } */
+.front{
+  padding: 20px;
+}
+.back {
+  padding: 20px;
+  opacity: 0;
+  margin-top: -250px;
+  height: 250px;
+width: 380px;
+  color: grey;
+  font-size: 20px;
+ background-color: white;
+ text-align: center;
+ /* box-shadow: 2px 2px 4px grey; */
+ transition: .9s;
+ 
+}
 
+.back:hover{
+  opacity: 1;
+}
 
+/*  */
  .alero{
    color: gray
  } 
@@ -102,11 +123,12 @@ display: flex;
 .card {
   text-align: center;
   padding: .2em;
-  background-color: seashell
+  background-color: seashell;
 }
  .design{
   background-color: white;
   margin: 1em;
+  
  }
 h6 {
   color: grey
